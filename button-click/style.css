@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #34495e;
+}
+button {
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 20px;
+  background-color: #c0392b;
+  border-radius: 12px;
+  box-shadow: 0 10px 0 #e74c3c;
+  transition: 0.25s;
+}
+button:active {
+  transform: translateY(5px);
+  box-shadow: none;
+}

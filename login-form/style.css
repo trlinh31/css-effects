@@ -1,0 +1,93 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #34495e;
+}
+.container {
+  width: 400px;
+  text-align: center;
+  background-color: #6c5ce7;
+  border-radius: 30px;
+  padding-bottom: 20px;
+  z-index: 1;
+}
+.container img {
+  width: 100%;
+  object-fit: cover;
+}
+.form-login {
+  position: relative;
+  width: 340px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 20px 30px;
+}
+.form-login::before {
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  top: -10px;
+  background-color: #ccc;
+  left: 5%;
+  z-index: -1;
+  border-radius: 20px;
+}
+.form-login p {
+  font-size: 14px;
+  opacity: 0.8;
+  padding-bottom: 20px;
+}
+.form-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+  text-align: left;
+  padding-bottom: 12px;
+  margin-top: 50px;
+}
+.form-group input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 12px;
+}
+.form-group input[type='password'] ~ .fa-eye {
+  display: none;
+}
+.form-group input[type='text'] ~ .fa-eye-slash {
+  display: none;
+}
+.form-group label {
+  position: absolute;
+  left: 28px;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.form-group input:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label {
+  top: -26px;
+}
+.login-button {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: #d63031;
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%, 50%);
+  margin-top: 20px;
+  border: 10px solid #6c5ce7;
+  border-radius: 50%;
+}
+.login-button button {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}

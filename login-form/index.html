@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="logo.png" alt="" />
+      <div class="form-login">
+        <h1>LOGIN</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, totam.</p>
+        <div class="form-group">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" autocomplete="off" id="username" placeholder=" " />
+          <label for="username">Username</label>
+        </div>
+        <div class="form-group">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" id="password" placeholder=" " />
+          <i class="password-icon fa-solid fa-eye" onclick="togglePassword()"></i>
+          <i class="password-icon fa-solid fa-eye-slash" onclick="togglePassword()"></i>
+          <label for="password">Password</label>
+        </div>
+        <div class="login-button">
+          <button><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function togglePassword() {
+        let typeInputPassword = document.getElementById('password');
+        typeInputPassword.type = typeInputPassword.type === 'password' ? 'text' : 'password';
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+header {
+  height: 60px;
+}
+nav {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 600;
+  color: #0984e3;
+}
+.navbar {
+  display: flex;
+}
+.navbar > li {
+  position: relative;
+  margin: 0 20px;
+  padding-bottom: 12px;
+}
+.navbar li a {
+  color: #000;
+  transition: 0.2s;
+}
+.navbar li:hover > a {
+  color: #0984e3;
+}
+.navbar li:hover .subnav {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.subnav {
+  visibility: hidden;
+  width: max-content;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  transform: translateY(30px);
+  background-color: #b2bec3;
+  transition: all 0.5s linear;
+}
+.subnav li {
+  padding: 12px 24px;
+}
